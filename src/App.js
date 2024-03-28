@@ -2,6 +2,9 @@ import "./App.css";
 import AppHeader from "./Components/AppHeader";
 import SideMenu from "./Components/SideMenu";
 import PageContent from "./Components/PageContent";
+// import { BasicTable } from "./Components/ReactTable/BasicTable";
+import { SortingTable } from "./Components/ReactTable/SortingTable";
+import { FilteringTable } from "./Components/ReactTable/FilteringTable";
 
 function App() {
   return (
@@ -10,7 +13,8 @@ function App() {
       <div style={{ display: "flex", flexDirection: "column", maxHeight: "100vh" }}>
         <div style={{ flex: "1", display: "flex" }}>
           <SideMenu />
-          <PageContent />
+          {/* <PageContent /> */}
+          <FilteringTable/>
         </div>
       </div>
     </div>
